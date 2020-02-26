@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C78908BD-D885-4910-8DB5-DC63DF640E68}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LMS_IntenciA</RootNamespace>
+    <AssemblyName>LMS</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>IMG_20150726_193341.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin%28profile%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin%28profile%29.Designer.cs">
+      <DependentUpon>admin%28profile%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookEdit.Designer.cs">
+      <DependentUpon>BookEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FineHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FineHistory.Designer.cs">
+      <DependentUpon>FineHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_about.Designer.cs">
+      <DependentUpon>frm_about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_contact.Designer.cs">
+      <DependentUpon>frm_contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_fines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_fines.Designer.cs">
+      <DependentUpon>frm_fines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MnN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MnN.Designer.cs">
+      <DependentUpon>frm_MnN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LenView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LenView.Designer.cs">
+      <DependentUpon>LenView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lmsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lmsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MagazineReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MagazineReg.Designer.cs">
+      <DependentUpon>MagazineReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberEdit.Designer.cs">
+      <DependentUpon>MemberEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberReg.Designer.cs">
+      <DependentUpon>MemberReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookReg.Designer.cs">
+      <DependentUpon>BookReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conman.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewspaperReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewspaperReg.Designer.cs">
+      <DependentUpon>NewspaperReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RefView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RefView.Designer.cs">
+      <DependentUpon>RefView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="staff_edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staff_edit.Designer.cs">
+      <DependentUpon>staff_edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staff_reg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staff_reg.Designer.cs">
+      <DependentUpon>staff_reg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user%28admin%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user%28admin%29.Designer.cs">
+      <DependentUpon>user%28admin%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user%28lending%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user%28lending%29.Designer.cs">
+      <DependentUpon>user%28lending%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user%28MnN%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user%28MnN%29.Designer.cs">
+      <DependentUpon>user%28MnN%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user%28reference%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user%28reference%29.Designer.cs">
+      <DependentUpon>user%28reference%29.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin%28profile%29.resx">
+      <DependentUpon>admin%28profile%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookEdit.resx">
+      <DependentUpon>BookEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FineHistory.resx">
+      <DependentUpon>FineHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_about.resx">
+      <DependentUpon>frm_about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_contact.resx">
+      <DependentUpon>frm_contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_fines.resx">
+      <DependentUpon>frm_fines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MnN.resx">
+      <DependentUpon>frm_MnN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LenView.resx">
+      <DependentUpon>LenView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MagazineReg.resx">
+      <DependentUpon>MagazineReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberEdit.resx">
+      <DependentUpon>MemberEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberReg.resx">
+      <DependentUpon>MemberReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookReg.resx">
+      <DependentUpon>BookReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewspaperReg.resx">
+      <DependentUpon>NewspaperReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RefView.resx">
+      <DependentUpon>RefView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="staff_edit.resx">
+      <DependentUpon>staff_edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staff_reg.resx">
+      <DependentUpon>staff_reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user%28admin%29.resx">
+      <DependentUpon>user%28admin%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user%28lending%29.resx">
+      <DependentUpon>user%28lending%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user%28MnN%29.resx">
+      <DependentUpon>user%28MnN%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user%28reference%29.resx">
+      <DependentUpon>user%28reference%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="lmsDataSet.xsc">
+      <DependentUpon>lmsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="lmsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>lmsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="lmsDataSet.xss">
+      <DependentUpon>lmsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20150725_181518.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_879999.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tron %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1405154916814.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\022062-3d-transparent-glass-icon-culture-book2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\486_blue_abstract_frame_02_by_tigers_stock-d4w155s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IMG_20150726_193341.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
